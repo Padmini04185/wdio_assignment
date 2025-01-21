@@ -42,11 +42,6 @@ Then(/^user should see calculated results displayed$/, async () => {
     logger.info(await RetirementCalcPage.resultMsg.getText())    
 });
 
-// Then(/^user should see mandatory fields highighted$/, async () => {
-//     await expect(RetirementCalcPage.resultHeader).toExist()
-//     await expect(RetirementCalcPage.resultMsg).toExist()
-// });
-
 Then(/^verify Additional Social Security fields are (displayed|hidden)$/, async (arg) => {
     await RetirementCalcPage.checkSocialSecurityDisplay(arg);
 });
