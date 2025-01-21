@@ -1,0 +1,6 @@
+export enum waitTime{
+ ONESEC=1000,
+ TWOSEC=2000,
+ FOURSEC=4000,
+ FIVESEC=5000
+}

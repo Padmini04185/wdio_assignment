@@ -1,0 +1,41 @@
+{
+    "allData":{    
+        "currentAge":40,
+        "retirementAge":60,
+        "currentAnnualIncome":100000,
+        "spouseAnnualIncome":75000,
+        "currentRetirementSavings":50000,
+        "currentRetirementContri":10,
+        "annualRetirmentContriIncrease":5,
+        "socialSecIncome":"Yes",
+        "relationshipStatus":"Married",
+        "socialSecurityOverride":4000,
+        "otherIncome":500,
+        "yearRetirementToLast":20,
+        "postRetirmentIncomeRise":"Yes",
+        "percentFinalIncomeDesired":75
+    },
+    "mandatoryData":{
+        "currentAge":41,
+        "retirementAge":60,
+        "currentAnnualIncome":100000,
+        "currentRetirementSavings":50000,
+        "currentRetirementContri":10,
+        "annualRetirmentContriIncrease":5
+         },
+    "errorData":{
+        "currentAge":61,
+        "retirementAge":60,
+        "currentAnnualIncome":100000,
+        "currentRetirementSavings":50000,
+        "currentRetirementContri":10,
+        "annualRetirmentContriIncrease":5
+        },
+    "errorText":{
+        "alertMsg":"Please fill out all required fields",
+        "inputRequiredMsg":"Input required",
+        "retirementAgeErrorMsg":"Planned retirement age must be greater than current age"          
+    }
+}
+
+

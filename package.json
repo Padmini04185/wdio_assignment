@@ -1,0 +1,29 @@
+{
+  "name": "typescript_proj",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "wdio": "wdio run wdio.conf.ts"
+  },
+  "keywords": [
+    "typescript",
+    "wdio",
+    "cucumber"
+  ],
+  "author": "padmini",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/allure-reporter": "^9.5.0",
+    "@wdio/cli": "^9.4.5",
+    "@wdio/cucumber-framework": "^9.4.4",
+    "@wdio/local-runner": "^9.4.5",
+    "@wdio/spec-reporter": "^9.4.4",
+    "webdriverio": "^9.2.14",
+    "winston": "^3.17.0"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.32.0",
+    "reflect-metadata": "^0.2.2"
+  }
+}
