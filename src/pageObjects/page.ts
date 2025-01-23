@@ -8,11 +8,13 @@ import logger from '../helper/logger'
 */
 export default class Page {
     /**
-    * Opens a sub page of the page
+    * Loads the browser with given url
     */
+    
     async open(path:string) {
         logger.info("Launching website.....")
         await browser.url(path)
+        await expect(browser).toHaveTitle(`How Much to Save for Retirement | Securian Financial`)
         logger.info("Retirement Calculator Website launched successfully....")
     }
 
@@ -24,9 +26,10 @@ export default class Page {
      * elem -> elem , web element on which operation is performed
      *  
      */
+    
     async waitForElementToDisplay(elem: ChainablePromiseElement): Promise<void> {
         try{
-         await elem.waitForDisplayed({ timeout: waitTime.FIVESEC })
+           await elem.waitForDisplayed({ timeout: waitTime.FIVESEC })
          } 
          catch(error)
          {
@@ -54,7 +57,7 @@ export default class Page {
 
     
      /**
-     * Method returns xpath of button object based button name passed as parameter
+     * getBtnObj Method returns button object based button name passed as parameter
      * Param -> name is a button name 
      *  
      */
